@@ -1,0 +1,6 @@
+{
+  "name": "Thunder Trail Assistant",
+  "description": "Native Android assistant with local computer vision target detection, directional chevrons, trap detection, real AccessibilityService swipe gestures, and floating overlay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
