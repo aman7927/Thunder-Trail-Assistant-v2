@@ -1,37 +1,13 @@
-@import "tailwindcss";
-
-@theme {
-  --color-base-950: #070a0f;
-  --color-base-900: #0b1018;
-  --color-base-850: #101822;
-  --color-base-800: #16212e;
-  --color-base-700: #1f2d3e;
-  --color-base-600: #2a3d52;
-
-  --color-accent-400: #38bdf8;
-  --color-accent-500: #0ea5e9;
-  --color-accent-600: #0284c7;
-
-  --color-warn-400: #fbbf24;
-  --color-warn-500: #f59e0b;
-
-  --color-danger-400: #f87171;
-  --color-danger-500: #ef4444;
-  --color-danger-600: #dc2626;
-
-  --color-success-400: #4ade80;
-  --color-success-500: #22c55e;
-
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html, body, #root {
   height: 100%;
   margin: 0;
-  background: var(--color-base-950);
+  background: #070a0f;
   color: #e2e8f0;
-  font-family: var(--font-sans);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -43,12 +19,6 @@ html, body, #root {
     rgba(56, 189, 248, 0.03) 2px,
     rgba(56, 189, 248, 0.03) 4px
   );
-}
-
-@keyframes pulse-ring {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.05); opacity: 0.4; }
-  100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 @keyframes blink {
@@ -67,4 +37,18 @@ html, body, #root {
 
 .sweep-line {
   animation: sweep 3s linear infinite;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #1f2d3e;
+  border-radius: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #2a3d52;
 }
